@@ -1,0 +1,38 @@
+/* style for every paragraph */
+p {
+    font-size: 2em;
+    color: #333333;
+}
+
+/* style for level 2 head */
+h2 {
+    border-color: #0056b3;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* style for every table */
+
+table, td, th {
+    border-color: #8b0000;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-style: solid;
+}
+
+/* ID for the third paragraph */
+#unique-paragraph {
+    background-color: #ffff00;
+    font-weight: bold;
+}
+
+/*Class selector */
+.important-text {
+    color: #ffA500;
+    font-weight: bold;
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+}
