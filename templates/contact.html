@@ -11,13 +11,15 @@
   <h1>Survey</h1>
 
   {% if form_submitted %}
-
       <h2>Thank you for completing my survey!</h2>
 
       <p>First Name: {{ request.form.get('first_name') }}</p>
       <p>Last Name: {{ request.form.get('last_name') }}</p>
       <p>Email: {{ request.form.get('email') }}</p>
       <p>Dominant Hand: {{ 'dominant_hand' }}</p>
+      <div class="alert" role="alert">
+        <p>Survey was submitted.</p>
+      </div>
   {% else %}
 
   <form class="row g-3" action="{{ url_for('contact') }}" method="post">
