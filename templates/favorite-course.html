@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>favorite course</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block page_title %}Favorite Course{% endblock %}
+
+{% block page_head %}Favorite Course{% endblock %}
+
+{% block page_content %}
 
 <p>You entered your favorite course as: {{ subject }}{{ course_num }}</p>
 
 
-</body>
-</html>
