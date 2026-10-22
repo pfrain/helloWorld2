@@ -27,19 +27,19 @@
 
         <div>
             <label for="sizesInputDefault" class="form-label">First Name</label>
-            <input class="form-control" type="text" id="first_name" placeholder="Default input"
+            <input class="form-control" type="text" id="first_name" name="first_name"placeholder="enter here"
                    aria-label="Default input example">
         </div>
 
         <div>
             <label for="sizesInputDefault" class="form-label">Last Name</label>
-            <input class="form-control" type="text" id="last_name" placeholder="Default input"
+            <input class="form-control" type="text" id="last_name" name="last_name"placeholder="enter here"
                    aria-label="Default input example">
         </div>
 
         <div class="form-field">
             <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
             <div class="form-text">
             We’ll never share your email with anyone else, Don't worry!
             </div>
@@ -53,6 +53,10 @@
                     <option value="2">Right-handed</option>
                     <option value="3">Ambidextrous</option>
                 </select>
+        </div>
+
+        <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
   </form>
