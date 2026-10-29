@@ -41,14 +41,6 @@
         <br>{{ student['last_name'] }}
     {% endif %}
   </div>
-  <div class="col-md-4">
-    <label for="birth_date" class="form-label"><strong>Birth Date</strong></label>
-    {% if action and action in ['create', 'update'] %}
-    <input type="date" class="form-control" id="birth_date" name="birth_date" value="{{ student['birth_date'].strftime('%Y-%m-%d') if student else '' }}" required>
-    {% else %}
-        <br>{{ student['birth_date'].strftime('%m/%d/%Y') }}
-    {% endif %}
-  </div>
 
   <div class="col-md-4">
     <label for="email" class="form-label"><strong>Email</strong></label>
@@ -58,6 +50,17 @@
         <br>{{ student['email'] }}
     {% endif %}
   </div>
+
+  <div class="col-md-4">
+    <label for="birth_date" class="form-label"><strong>Birth Date</strong></label>
+    {% if action and action in ['create', 'update'] %}
+    <input type="date" class="form-control" id="birth_date" name="birth_date" value="{{ student['birth_date'].strftime('%Y-%m-%d') if student else '' }}" required>
+    {% else %}
+        <br>{{ student['birth_date'].strftime('%m/%d/%Y') }}
+    {% endif %}
+  </div>
+
+
 
   <div class="col-md-4">
     <label for="major_id" class="form-label"><strong>Major</strong></label>
